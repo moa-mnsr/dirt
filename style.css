@@ -9,6 +9,8 @@ body {
   flex-direction: column;
   justify-content: center;
   height: 100dvh;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 .grid-container {
@@ -25,6 +27,7 @@ text-align: left;
   background: mistyrose;
   padding: 2em;
   border: 1px solid black;
+  cursor: pointer;
 }
 
 /* Reordering on Resize */
