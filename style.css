@@ -1,7 +1,24 @@
 @import 'reset.css';
 
+@font-face {
+  font-family: 'Otto';
+  src: url('fonts/ABCOtto-Regular-Trial.otf') format('opentype'),
+        url('fonts/ABCOtto-Regular-Trial.woff') format('woff'),
+        url('fonts/ABCOtto-Regular-Trial.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+}
+
+@font-face {
+  font-family: 'Otto'; /* Italic */
+  src: url('fonts/ABCOtto-RegularItalic-Trial.otf') format('opentype'), /* Path to your italic font file */
+       url('fonts/ABCOtto-RegularItalic-Trial.woff') format('woff'),
+       url('fonts/ABCOtto-RegularItalic-Trial.woff2') format('woff2');
+  font-weight: normal;
+  font-style: italic;
+}
+
 body {
-  font-family: "Times New Roman", serif;
   background-color: whitesmoke;
   color: black;
   text-align: center;
@@ -11,6 +28,11 @@ body {
   height: 100dvh;
   user-select: none;
   -webkit-user-select: none;
+  font-family: 'Otto', serif;
+}
+
+header, footer {
+  font-style: italic;
 }
 
 .grid-container {
@@ -28,6 +50,8 @@ text-align: left;
   padding: 2em;
   border: 1px solid black;
   cursor: pointer;
+  font-style: normal;
+
 }
 
 /* Reordering on Resize */
